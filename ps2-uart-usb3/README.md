@@ -11,8 +11,8 @@ PS2 connector has all signal pins connected so a splitter cable can be used to c
 JP1 header is for selecting power supply of PS2 connector. Three options are possible:
 
 * 5V: Place a jumper between VBUS and central pin
-* 3V3: Place a jumper between 3V3 and central pin. For this is required a MiSTer Analog IO version with a jumper that connects 3V3 to pin 9 of USB3.
-*  External power supply can also be connected to the central pin and GND.
+* External power supply can also be connected to the central pin and GND.
+* ~~3V3: Place a jumper between 3V3 and central pin. For this is required a MiSTer Analog IO version with a jumper that connects 3V3 to pin 9 of USB3~~.  [CAUTION: this is not possible when using a male male USB3 cable as the pin 9 is connected to pin 5 at the other end of cable]
 
 
 
@@ -34,15 +34,11 @@ JP1 header is for selecting power supply of PS2 connector. Three options are pos
 
   
 
-**TODO**
+**TODO & IMPROVEMENTS**
 
+* Make a male USB3 version with voltage protections so the SNAC adapter and male male cable would be unnecessary
 * Shield pins of PS2 connector are not connected to GND
 * 3V3 silkscreen NOTE at pcb back "3V3 from MiSTer analog IO with user IO jumper placed"
-
-**IMPROVEMENTS**
-
-* Make a male USB3 version to avoid having to connect a male to male cable
-* Make a male USB3 version with voltage protections so the SNAC adapter would be unnecessary
 
 **TESTING**
 
