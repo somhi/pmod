@@ -20,7 +20,7 @@ VBUS is the power supply to whatever is connected to the SNAC adapter.
 
 Different power supply options:
 
-* Placing a jumper between 3V3 and VBUS will not work on all gamepads. 
+* Placing a jumper between 3V3 and VBUS (will not work on all gamepads)
 
 * Other option is to connect 5V wire from FPGA to VBUS pin   (note that this will require to use a SNAC level shifter in between for protecting 3V3 GPIO)
 
@@ -29,3 +29,17 @@ Different power supply options:
   
 
 **PLEASE MAKE SURE NOT TO PLACE A JUMPER EVER BETWEEN VBUS AND GND PINS. I'm not responsible for what could happen.**
+
+
+
+**NOTES ABOUT USB3 CABLES**
+
+* male male cable is crossover cable, meaning that Rx- is connected to Tx- and Rx+ to Tx+
+
+* female male cable is straight cable, meaning all pins have exact correspondence in each side of cable (Rx- with Rx-, ...)
+
+  
+
+**TODO**
+
+* move GND pin to avoid user placing a jumper which will short GND and VBUS
